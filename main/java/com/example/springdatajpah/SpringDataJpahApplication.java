@@ -47,7 +47,7 @@ public class SpringDataJpahApplication {
     @Bean
     public CommandLineRunner run(ClientRepository repository) {
         return (args) -> {
-            insertOneClient(repository);
+            //insertOneClient(repository);
             // insertFourEmployees(repository);
             System.out.println(repository.findAll());
             System.out.println( repository.findClientsByLastNameContaining("Amsalem"));
